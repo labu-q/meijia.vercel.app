@@ -1,19 +1,8 @@
-import { seedData } from './data';
+export const seedData = {
+  customers: [],
+  technicians: [],
+  transactions: [],
+};
 
-const KEY = 'nail-studio-ledger-v1';
-
-export function loadData() {
-  try {
-    const stored = localStorage.getItem(KEY);
-    const data = stored ? JSON.parse(stored) : seedData;
-    // 清理开发阶段写入浏览器的演示流水，生产版默认从空账本开始。
-    const hasDemoData = data.transactions?.some((item) => item.id === 'r1' || item.id === 'e1');
-    return hasDemoData ? seedData : data;
-  } catch {
-    return seedData;
-  }
-}
-
-export function saveData(data) {
-  localStorage.setItem(KEY, JSON.stringify(data));
-}
+export const incomeCategories = ['美甲服务', '手足护理', '储值充值', '产品销售', '其他收入'];
+export const expenseCategories = ['耗材采购', '房租水电', '工资提成', '营销推广', '设备工具', '其他支出'];

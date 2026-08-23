@@ -1,4 +1,4 @@
-import { seedData } from './data';
+import { seedData } from '../data/defaultData';
 
 const KEY = 'nail-studio-ledger-v1';
 

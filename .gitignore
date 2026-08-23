@@ -2,4 +2,6 @@ node_modules/
 dist/
 .vercel/
 .pnpm-store/
+nail-ledger/
+nail-ledger.zip
 .DS_Store

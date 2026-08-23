@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
-import { expenseCategories, incomeCategories } from './data';
-import { loadData, saveData } from './storage';
+import { expenseCategories, incomeCategories } from './data/defaultData';
+import { loadData, saveData } from './lib/storage';
 
 const today = () => new Date().toISOString().slice(0, 10);
 const money = (value) => `¥${Number(value || 0).toFixed(2)}`;

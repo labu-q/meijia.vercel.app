@@ -1,4 +1,7 @@
 export const seedData = {
+  shop: {
+    name: '小鹿美甲工作室',
+  },
   customers: [],
   technicians: [],
   transactions: [],
